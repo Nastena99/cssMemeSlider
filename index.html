@@ -3,11 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   <title>CSS meme-slider</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <div class="block-wrap-slider">
+    <div class="slider">
+       <input type="radio" id="rs1" class="hidden-radio" name="control" checked="checked">
+       <input type="radio" id="rs2" class="hidden-radio" name="control">
+       <input type="radio" id="rs3" class="hidden-radio" name="control">
+       <input type="radio" id="rs4" class="hidden-radio" name="control">
+       <input type="radio" id="rs5" class="hidden-radio" name="control">
+       
+       <div class="tape-images">
+          <div class="box-image rs1">
+             <img src="assets/images/meme1.jpg" class="slider-image" alt="meme">
+          </div>
+          <div class="box-image">
+             <img src="assets/images/meme2.jpg" class="slider-image" alt="meme">
+          </div>
+          <div class="box-image">
+             <img src="assets/images/meme3.png" class="slider-image" alt="meme">
+          </div>
+          <div class="box-image">
+             <img src="assets/images/meme4.jpg" class="slider-image" alt="meme">
+          </div>
+          <div class="box-image">
+             <img src="assets/images/meme5.png" class="slider-image" alt="meme">
+          </div>
+       </div>
+
+       <div class="wrapper-block-control">
+          <div class="text-visible-window">
+             <ul class="text-tape">
+                <li class="text rs2">Kiwie</li>
+                <li class="text">Тут вам посылка из китая</li>
+                <li class="text">How is HR these days?</li>
+                <li class="text">Идеально</li>
+                <li class="text">Знаете, я и сам своего рода МЭМС</li>
+             </ul>
+          </div>
+          
+          <div class="slider__block-nav nav">
+            <label class="nav__btn-field btn1" for="rs1">
+              <div class="nav__button"></div>
+            </label>
+            <label class="nav__btn-field btn2" for="rs2">
+              <div class="nav__button"></div>
+            </label>
+            <label class="nav__btn-field btn3" for="rs3">
+              <div class="nav__button"></div>
+            </label>
+            <label class="nav__btn-field btn4" for="rs4">
+              <div class="nav__button"></div>
+            </label>
+            <label class="nav__btn-field btn5" for="rs5">
+              <div class="nav__button"></div>
+            </label>
+          </div>
+       </div>
+    </div>
+  </div>
 </body>
 </html>
