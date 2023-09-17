@@ -7,7 +7,7 @@
 }
 
 .slider {
-  max-width: 70rem;
+  max-width: 60rem;
   height: auto;
   background: #25282A;
   border-top: 2.5rem solid #25282A;
@@ -150,4 +150,27 @@
 #rs5:active ~ .wrapper-block-control .slider__block-nav .nav__btn-field:hover .nav__button {
   background: #D8D7D7;
   border: 0.1rem solid #79A9EF;
+}
+
+@media (max-width: 600px) {
+  .wrapper-block-control {
+    flex-direction: column-reverse;
+    gap: 2rem 0;
+  }
+
+  .text-visible-window {
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  
+  .text {
+    font: 400 1.6rem/1.6rem 'Roboto';
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font: 400 1.4rem/1.4rem 'Roboto';
+    text-align: center;
+  }
 }
