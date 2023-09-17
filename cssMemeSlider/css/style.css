@@ -7,7 +7,7 @@
 }
 
 .slider {
-  max-width: 60rem;
+  max-width: 50rem;
   height: auto;
   background: #25282A;
   border-top: 2.5rem solid #25282A;
@@ -168,7 +168,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .text {
     font: 400 1.4rem/1.4rem 'Roboto';
     text-align: center;
